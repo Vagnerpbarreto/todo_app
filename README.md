@@ -1,0 +1,1 @@
+Projeto exemplo com Flask + Angular + Docker

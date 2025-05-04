@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./backend:/app
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "4200:4200"
+    depends_on:
+      - backend
+
+  backend-tests:
+    build: ./backend
+    command: ["pytest"]
+    working_dir: /app
+    environment:
+      - PYTHONPATH=/app
+    volumes:
+      - ./backend:/app
+
+
