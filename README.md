@@ -37,7 +37,7 @@ Este é um projeto fullstack de gerenciamento de tarefas com backend em **Flask 
 ### 1. Clone o repositório
 
 ```bash
-git clone https://github.com/seu-usuario/todo_app.git
+git clone https://github.com/Vagnerpbarreto/todo_app.git
 cd todo_app
 ```
 
